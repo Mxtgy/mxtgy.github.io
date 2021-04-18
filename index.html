@@ -2,11 +2,283 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a185ac6f9e.js" crossorigin="anonymous"></script>
+    <title>Réservia</title>
 </head>
+
 <body>
-    <h1>Réservia</h1>
+
+    <header>
+        <div class="re_image">
+            <a class="re_logo" href="#tothehomepage"><img src="images/logo/Reservia.svg" alt=""></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Hébergements</a></li>
+                <li><a href="">Activités</a></li>
+                <li><a href="" class="re_subscribe">S'inscrire</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="re_firstSection">
+            <div class="re_texts">
+                <p class="re_mainTitle">Trouvez votre hébergement pour des vacances de rêves</p>
+                <p class="re_description">En plein centre ville ou en pleine nature</p>
+            </div>
+            <div class="re_searchBar">
+                <div><i class="fas fa-map-marker-alt"></i> </div>
+                <input type="text" placeholder="Marseille, France" name="" id="">
+                <button type="submit">Rechercher</button>
+            </div>
+            <div class="re_filtres">
+                <p class="re_titreFiltre">Filtres</p>
+                <div class="re_filtre">
+                    <div class="re_icon"><i class="fas fa-money-bill-wave"></i></div>
+                    <p class="re_filtreName">économique</p>
+                </div>
+                <div class="re_filtre">
+                    <div class="re_icon"><i class="fas fa-child"></i></div>
+                    <p class="re_filtreName">familial</p>
+                </div>
+                <div class="re_filtre">
+                    <div class="re_icon"><i class="fas fa-heart"></i></div>
+                    <p class="re_filtreName">romantique</p>
+                </div>
+                <div class="re_filtre">
+                    <div class="re_icon"><i class="fas fa-dog"></i></div>
+                    <p class="re_filtreName">animaux autorisés</p>
+                </div>
+            </div>
+            <div class="re_infoResults">
+                <div class="re_iconInfo"><i class="fas fa-info"></i></div>
+                <p class="re_resultText">Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </section>
+        <section class="re_hebergements">
+            <div class="re_hebergement re_h1">
+                <p class="re_hebergementTitle">Hébergements à Marseille</p>
+                <div class="re_heblist">
+                    <a class="re_card" href="">
+                        <div class="re_imgCard">
+                            <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="re_cardImage" alt="">
+                        </div>
+                        <div class="re_cardText">
+                            <p class="re_hName">Auberge la Cannebière</p>
+                            <p class="re_hDescription">Nuit à partir de <strong>25€</strong></p>
+                            <div class="re_stars">
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="re_card" href="">
+                        <div class="re_imgCard">
+                            <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="re_cardImage" alt="">
+                        </div>
+                        <div class="re_cardText">
+                            <p class="re_hName">Hôtel du port</p>
+                            <p class="re_hDescription">Nuit à partir de <strong>52€</strong></p>
+                            <div class="re_stars">
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="re_card" href="">
+                        <div class="re_imgCard">
+                            <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="re_cardImage" alt="">
+                        </div>
+                        <div class="re_cardText">
+                            <p class="re_hName">Hôtel Les mouettes</p>
+                            <p class="re_hDescription">Nuit à partir de <strong>76€</strong></p>
+                            <div class="re_stars">
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="re_card" href="">
+                        <div class="re_imgCard">
+                            <img src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="re_cardImage" alt="">
+                        </div>
+                        <div class="re_cardText">
+                            <p class="re_hName">Hôtel de la mer</p>
+                            <p class="re_hDescription">Nuit à partir de <strong>46€</strong></p>
+                            <div class="re_stars">
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="re_card" href="">
+                        <div class="re_imgCard">
+                            <img src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="re_cardImage" alt="">
+                        </div>
+                        <div class="re_cardText">
+                            <p class="re_hName">Auberge La Panier</p>
+                            <p class="re_hDescription">Nuit à partir de <strong>23€</strong></p>
+                            <div class="re_stars">
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="re_card" href="">
+                        <div class="re_imgCard">
+                            <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="re_cardImage" alt="">
+                        </div>
+                        <div class="re_cardText">
+                            <p class="re_hName">Hôtel chez Amina</p>
+                            <p class="re_hDescription">Nuit à partir de <strong>96€</strong></p>
+                            <div class="re_stars">
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull"><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <a href="" class="re_seeMore">Afficher plus</a>
+            </div>
+            <div class="re_hebergement re_h2">
+                <div class="re_options">
+                    <p class="re_hebergementTitle">Les plus populaires</p>
+                    <div class="re_graphIcon"><i class="fas fa-chart-line"></i></div>
+                </div>
+                <div class="re_list">
+                    <a class="re_card1" href="">
+                        <div class="re_imgCard1">
+                            <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="re_cardImage1" alt="">
+                        </div>
+                        <div class="re_cardText1">
+                            <p class="re_hName1">Hôtel Le soleil du matin</p>
+                            <p class="re_hDescription1">Nuit à partir de <strong>128€</strong></p>
+                            <div class="re_stars1">
+                                <span class="re_starFull1"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull1"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull1"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull1"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull1"><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="re_card1" href="">
+                        <div class="re_imgCard1">
+                            <img src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" class="re_cardImage1" alt="">
+                        </div>
+                        <div class="re_cardText1">
+                            <p class="re_hName1">Au coeur de l'eau Chambres d'hôtes</p>
+                            <p class="re_hDescription1">Nuit à partir de <strong>71€</strong></p>
+                            <div class="re_stars1">
+                                <span class="re_starFull1"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull1"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull1"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull1"><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="re_card1" href="">
+                        <div class="re_imgCard1">
+                            <img src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="re_cardImage1" alt="">
+                        </div>
+                        <div class="re_cardText1">
+                            <p class="re_hName1">Hôtel Tout bleu et Blanc</p>
+                            <p class="re_hDescription1">Nuit à partir de <strong>68€</strong></p>
+                            <div class="re_stars1">
+                                <span class="re_starFull1"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull1"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull1"><i class="fas fa-star"></i></span>
+                                <span class="re_starFull1"><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="re_activités">
+            <p class="re_hebergementTitle">Activités à Marseille</p>
+            <div class="re—contain">
+                <div class="re_actiCard">
+                    <div class="re_actiText">
+                        <p class="re_actiName">Vieux-Port</p>
+                    </div>
+                </div>
+                <div class="re_actiCard2">
+                    <div class="re_actiCard1_2">
+                        <div class="re_actiText">
+                            <p class="re_actiName">Fort de Pomègues</p>
+                        </div>
+                    </div>
+                    <div class="re_actiCard1_3">
+                        <div class="re_actiText">
+                            <p class="re_actiName">îles du Frioul</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="re_actiCard3">
+                    <div class="re_actiText">
+                        <p class="re_actiName">Parc National des Calanques</p>
+                    </div>
+                </div>
+                <div class="re_actiCard4">
+                    <div class="re_actiCard1_4">
+                        <div class="re_actiText">
+                            <p class="re_actiName">Notre-Dame-de-la-Garde</p>
+                        </div>
+                    </div>
+                    <div class="re_actiCard1_5">
+                        <div class="re_actiText">
+                            <p class="re_actiName">Parc Longchamp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <footer>
+            <div class="re_footer">
+                <div class="re_footerPart">
+                    <h3>A propos</h3>
+                    <a href="">Fonctionnement du site</a>
+                    <a href="">Conditions générales de vente</a>
+                    <a href="">Données et confidentialité</a>
+                </div>
+                <div class="re_footerPart">
+                    <h3>Nos hébergements</h3>
+                    <a href="">Charte qualité</a>
+                    <a href="">Soumettre votre hôtel</a>
+                </div>
+                <div class="re_footerPart">
+                    <h3>Assistance</h3>
+                    <a href="">Centre d'aide</a>
+                    <a href="">Nous contacter</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
 </body>
 </html>

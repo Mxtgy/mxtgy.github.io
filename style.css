@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+a {
+    color: unset;
+}
+
+header {
+    display: flex;
+    margin: 0 35px;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+
+.re_logo {
+    cursor: pointer;
+}
+
+.re_image img {
+    width: 100px;
+}
+
+/* Menu */
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+
+nav li{
+    padding: 30px;
+    border-top: 2px solid transparent;
+    color: #000;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+nav li:hover, nav li:active {
+    border-color: #0065FC;
+    color: #0065FC;
+}
+
+.re_subscribe {
+    font-weight: 700;
+    color: #0065FC;
+}
+
+/* First Section */
+
+.re_firstSection {
+    margin: 0 35px;
+    color: #000;
+    margin-top: 30px;
+}
+
+/* Texts */
+
+.re_mainTitle{
+    font-weight: 700;
+    font-size: 25px;
+    margin: auto;
+}
+
+.re_description {
+    margin: 10px 0 20px;
+}
+
+/* Searchbar */
+
+.re_searchBar {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.re_searchBar div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    width: 54px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.re_searchBar .fa, .re_searchBar .fas {
+    font-size: 18px;
+    color: #000;
+} 
+
+.re_searchBar input {
+    border: none;
+    outline: none;
+    color: #000;
+    width: 210px;
+    font-size: 17px;
+    padding-left: 15px;
+    border: 1px solid #F2F2F2;
+}
+
+.re_searchBar input::placeholder {
+    font-weight: 700;
+    color: #000;
+}
+
+.re_searchBar input:focus::placeholder {
+    color: transparent;
+}
+
+.re_searchBar button {
+    height: 100%;
+    padding: 15px 21px;
+    font-size: 18px;
+    font-weight: 700;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    background-color: #0065FC;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Filtres */
+
+.re_filtres {
+    display: flex;
+    align-items: center;
+}
+
+.re_titreFiltre {
+    font-weight: 700;
+    font-size: 17px;
+    margin-right: 30px; 
+}
+
+.re_filtre {
+    display: flex;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 50px;
+    height: 43px;
+    justify-content: space-between;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.re_filtre:hover {
+    transform: scale(1.04);
+}
+
+.re_icon {
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    position: relative;
+    left: -2px;
+    border: 2px solid #DEEBFF;
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.re_icon .fa, .re_icon .fas {
+    color: #0065FC;
+    font-size: 15px;
+}
+
+.re_filtreName {
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0 25px 0 10px;
+} 
+
+/* Info Resultat*/
+
+.re_infoResults {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.re_iconInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+}
+
+.re_iconInfo .fa, .re_iconInfo .fas {
+    color: #0065FC;
+    font-size: 15px;
+}
+
+.re_resultText {
+    margin-left: 10px;
+}
+
+/* Hébergements */
+
+.re_hebergements {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px;
+}
+
+.re_hebergement {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 20px 34px;
+}
+.re_h1 {
+    width: 60%;
+}
+.re_h2 {
+    width: 27%;
+}
+
+.re_hebergementTitle {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px 0 20px 0;
+}
+.re_options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 20px 0;
+    line-height: 0;
+}
+.re_seeMore {
+    font-weight: 700;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+.fa-chart-line {
+    font-size: 20px;
+}
+
+/* Hébergements first cards */
+
+.re_heblist {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.re_card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    transition: transform .2s;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.16);
+}
+.re_card:hover {
+    transform: scale(1.04);
+}
+.re_imgCard {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.re_cardImage {
+    width: 100%;
+}
+
+.re_cardText {
+    margin: 7px 10px;
+}
+.re_hName {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 2px 0 0 0;
+}
+.re_hDescription {
+    font-size: 13px;
+    margin: 5px 0 5px 0;
+}
+.re_hDescription strong {
+    font-weight: 700;
+}
+
+.fa-star {
+    font-size: 13px;
+    color: #F2F2F2;
+}
+
+.re_starFull i {
+    color: #0065FC;
+}
+
+.re_list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.re_card1 {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    width: 100%;
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    height: 139px;
+    transition: transform .2s;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.16);
+}
+.re_card1:hover {
+    transform: scale(1.04);
+}
+.re_imgCard1 {
+    width: 35%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.re_cardImage1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.re_cardText1 {
+    width: 50%;
+    margin-left: 20px;
+}
+.re_hName1 {
+    font-weight: 700;
+    font-size: 17px;
+    margin: 15px 0 0;
+}
+.re_hDescription1 {
+    margin-bottom: 50px;
+    margin: 10px 0 26px;
+}
+.re_hDescription1 strong {
+    font-weight: 700;
+}
+
+.re_stars1 {
+    margin: 0 0 15px;
+}
+
+.re_starFull1 i {
+    color: #0065FC;
+}
+
+
+
+/* Footer */
+
+.re_footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px 0 50px;
+}
+
+.re_footerPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 35%;
+    padding-left: 35px;
+}
+
+.re_footerPart a {
+    text-decoration: none;
+    line-height: 28px;
+    font-size: 15px;
+}
+
+.re_footerPart a:hover {
+    color: #0065FC;
+}
+
+
+.re_footer h3 {
+    font-size: 16px;
+}
+
+/* Activités */
+
+.re_activités {
+    margin: 45px 35px 50px;
+}
+
+.re—contain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.re_actiCard {
+    width: 20%;
+    height: 420px;
+    background-image: url(images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    transition: transform .2s;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.16);
+}
+
+.re_actiCard:hover {
+    transform: scale(1.04);
+}
+
+.re_actiText {
+    width: 100%;
+    position: absolute;
+    padding: 20px;
+    bottom: 0;
+    background-color: #fff;
+}
+
+.re_actiName {
+    margin: unset;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.re_actiCard2 {
+    width: 25%;
+    height: 420px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.re_actiCard1_2 {
+    width: 100%;
+    height: 190px;
+    background-image: url(images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    text-decoration: none;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    transition: transform .2s;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.16);
+}
+.re_actiCard1_2:hover {
+    transform: scale(1.04);
+}
+
+.re_actiCard1_3 {
+    width: 100%;
+    height: 190px;
+    background-image: url(images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    text-decoration: none;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    transition: transform .2s;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.16);
+}
+.re_actiCard1_3:hover {
+    transform: scale(1.04);
+}
+
+
+.re_actiCard3 {
+    width: 20%;
+    height: 420px;
+    background-image: url(images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    transition: transform .2s;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.16);
+}
+
+.re_actiCard3:hover {
+    transform: scale(1.04);
+}
+
+.re_actiCard4 {
+    width: 25%;
+    height: 420px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.re_actiCard1_4 {
+    width: 100%;
+    height: 190px;
+    background-image: url(images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    text-decoration: none;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    transition: transform .2s;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.16);
+}
+.re_actiCard1_4:hover {
+    transform: scale(1.04);
+}
+
+.re_actiCard1_5 {
+    width: 100%;
+    height: 190px;
+    background-image: url(images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    text-decoration: none;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    transition: transform .2s;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.16);
+}
+.re_actiCard1_5:hover {
+    transform: scale(1.04);
+}
