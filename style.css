@@ -7,6 +7,8 @@ body {
 
 a {
     color: unset;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 /* Header */
@@ -49,7 +51,7 @@ header {
     -ms-flex-align: center;
     align-items: center;
 }
-nav ul {
+.nav .menu-desk {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -61,7 +63,7 @@ nav ul {
     padding: 0;
 }
 
-nav li{
+.nav li{
     padding: 2em;
     border-top: 2px solid transparent;
     color: #000;
@@ -69,11 +71,11 @@ nav li{
     width: 100%;
 }
 
-nav li a, .r-subscribe-mob {
+.nav li a, .r-subscribe-mob {
     text-decoration: none;
 }
 
-nav li:hover, nav li:active {
+.nav li:hover, .nav li:active {
     border-color: #0065FC;
     color: #0065FC;
 }
@@ -99,7 +101,7 @@ nav li:hover, nav li:active {
         display: none;
     }
     .r-image {
-        padding: 1em 2em;
+        padding: 1em 1.5em;
     }
     .r-subscribe-mob {
         display: block;
@@ -112,42 +114,41 @@ nav li:hover, nav li:active {
         border-bottom-color: #0065FC;
         color: #0065FC; 
     }
-
-    nav li {
-        border-top: hidden;
-        border-bottom: 2px solid transparent;
+    .nav li{
+        padding: 1em;
+        border-top: none;
     }
 }
 
 
 /* Main */
-main {
-    padding: 0 2em;
-}
 .header-main {
-    padding: 0 1em;
+    padding: 0 3.5em;
     margin-bottom: 1em;
 }
 h1 {
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin: .5em 0;
 }
 
 @media screen and (max-width: 600px) {
     main {
         max-width: 100%;
-        padding: 0 1em;
     }
     h1 {
         font-size: 1.5em;
     }
+    .header-main {
+        padding: 0 1.5em;
+    }
 }
 @media screen and (max-width: 400px) {
     h1 {
-        font-size: 1.2em;
+        font-size: 1.4em;
+        margin: 1.5em 0 .5em;
     }
     .r-description {
-        font-size: .8em;
+        font-size: 1em;
     }
 }
 
@@ -155,7 +156,7 @@ h1 {
 
 .r-searchbar {
     display: flex;
-    margin: 1em 0;
+    margin: 2em 0 1.8em;
 }
 
 .r-searchbar .fa-map-marker-alt {
@@ -343,7 +344,7 @@ h1 {
 /* Hébergements */
 
 .r-hebergements {
-    padding: 0 1em;
+    padding: 0 3.5em;
     margin-bottom: 1em;
     display: flex;
     justify-content: space-between;
@@ -381,11 +382,13 @@ h1 {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
+.r-card-link {
+    width: 30%;
+    cursor: pointer;
+}
 .r-card {
     display: flex;
     flex-direction: column;
-    width: 30%;
     text-decoration: none;
     background-color: #fff;
     padding: .3em;
@@ -558,6 +561,9 @@ h1 {
     .r-right-card, .r-card {
         width: auto;
     }
+    .r-card-link {
+        width: auto;
+    }
     .r-right {
         width: 103%;
         border-radius: 0;
@@ -591,11 +597,13 @@ h1 {
     justify-content: flex-start;
     width: 27%;
     padding: 0em 2em;
+    list-style: none;
 }
-
+.r-footer-part li {
+    margin: .3em 0;
+}
 .r-footer-part a {
     text-decoration: none;
-    margin: .2em 0;
 }
 
 .r-footer-part a:hover {
@@ -610,7 +618,7 @@ h1 {
     }
     .r-footer-part {
         width: 70%;
-        padding: 1em 2em;
+        padding: .1em 2em;
     }
     .r-footer h3 {
         margin: 1em 0;
