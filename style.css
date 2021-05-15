@@ -569,7 +569,8 @@ h1 {
     text-align: left;
     padding: 1.2em 0;
 }
-.r-activite-caption span {
+.r-activite-caption h5 {
+    margin: 0;
     margin-left: 1em;
     font-size: 1em;
 }
@@ -646,7 +647,7 @@ h1 {
     .r-activite-link {
         width: 100%;
     }
-    .r-activite-caption span {
+    .r-activite-caption h5 {
         font-size: 1em;
     }
 }
