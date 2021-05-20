@@ -1,0 +1,128 @@
+/* Activités */
+
+.r-activites {
+    padding: 0 3.5em;
+    margin: 3em 0 3.5em;
+}
+.r-activites h2 {
+    font-size: 1.35em;
+}
+.r-activites-contain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5em 0 0;
+}
+.r-activite-link {
+    width: 23%;
+}
+.r-activite-card {
+    margin: 0;
+    border-radius: 1.5em;
+    overflow: hidden;
+    height: 29em;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.16);
+}
+.r-activite-figure {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    margin: 0;
+
+}
+.r-activite-figure img {
+    object-fit: cover;
+    height: 100%;
+}
+.r-activite-caption {
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-weight: 700;
+    text-align: left;
+    padding: 1.2em 0;
+}
+.r-activite-caption h5 {
+    margin: 0;
+    margin-left: 1em;
+    font-size: 1em;
+}
+.r-aside-activites {
+    display: flex;
+    width: 23%;
+    height: 29em;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.r-activite-aside-card {
+    margin: 0;
+    width: 100%;
+    border-radius: 1.5em;
+    overflow: hidden;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.16);
+}
+.r-activite-aside-figure {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    height: 100%;
+
+}
+.r-activite-aside-figure img {
+    object-fit: cover;
+    height: 100%;
+}
+.aside1, .aside2, .aside3, .aside4 {
+    width: 100%;
+    display: flex;
+}
+.aside1 {
+    height: 51%;
+} 
+.aside2 {
+    height: 41%;
+}
+.aside3 {
+    height: 44%;
+} 
+.aside4 {
+    height: 48%;
+}
+@media screen and (max-width: 1168px) {
+    .r-activite-caption {
+        padding: 1em 0;
+    }
+    .r-activite-caption span {
+        font-size: .7em;
+    }
+    .r-activite-card, .r-aside-activites {
+        height: 23em;
+    }
+}
+@media screen and (max-width: 850px) {
+    .r-activites {
+        padding: 0em 1.5em;
+        margin: 0em 0 2em;
+    }
+    .r-activites-contain {
+        flex-direction: column;
+        margin: 2em 0 0;
+    }
+    .r-activite-card, .r-aside-activites {
+        width: 100%;
+        height: auto;
+    }
+    .r-activite-link, .r-activite-card, .aside1, .aside2, .aside3, .aside4 {
+        height: 12em;
+        margin-bottom: 1.5em;
+    }
+    .r-activite-link {
+        width: 100%;
+    }
+    .r-activite-caption h5 {
+        font-size: 1em;
+    }
+}

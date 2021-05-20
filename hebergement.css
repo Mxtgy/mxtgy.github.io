@@ -1,0 +1,215 @@
+/* Hébergements */
+
+.r-hebergements {
+    padding: 0 3.5em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.r-hebergement {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    border-radius: 1.5em;
+    padding: 1.5em 2em 0;
+}
+.r-left {
+    width: 66.66%;
+    margin-right: 2em;
+}
+.r-right {
+    width: 33.33%;
+}
+.r-hebergements h2 {
+    font-size: 1.3em;
+    line-height: 0;
+    margin: 1.5em 0 2em;
+}
+.r-button-more {
+    font-weight: 700;
+    margin: 0 0 2em;
+    font-size: 1.1em;
+}
+.r-left-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.r-card-link-left {
+    width: 30%;
+}
+.r-left-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: .3em;
+    border-radius: 1.5em;
+    overflow: hidden;
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.16);
+}
+.r-img-card-left {
+    width: 100%;
+    border-top-left-radius: 1.45em;
+    border-top-right-radius: 1.45em;
+    overflow: hidden;
+    position: relative;
+    height: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.r-card-left-image {
+    width: 100%;
+    object-fit: cover;
+}
+.r-left-card-text {
+    margin: .1em 1.1em;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.r-left-name {
+    margin: .3em 0 0 0;
+}
+.r-left-description {
+    font-size: 1em;
+    margin: .2em 0;
+}
+.r-left-name, .r-left-description, .r-right-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.r-left-description strong {
+    font-weight: 700;
+}
+.fa-star {
+    font-size: 1em;
+    color: #F2F2F2;
+}
+.r-star-full, .r-star-full-right {
+    color: #0065FC !important;
+}
+.r-right-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    line-height: 0;
+}
+.fa-chart-line {
+    font-size: 1.4em;
+}
+.r-right-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.r-right-list header {
+    display: contents;
+}
+.r-right-card {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: .3em;
+    border-radius: 1.5em;
+    overflow: hidden;
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.16);
+}
+.r-img-card-right {
+    width: 35%;
+    border-top-left-radius: 1.45em;
+    border-bottom-left-radius: 1.45em;
+    overflow: hidden;
+    height: 100%;
+    height: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.r-card-right-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.r-right-card-text {
+    width: 50%;
+    margin-left: 1.5em;
+    position: relative;
+}
+.r-right-name {
+    margin: 1em 0 .3em;
+}
+.r-right-description {
+    margin-bottom: 2em;
+    margin: 1em 0 1.5em;
+}
+.r-right-description strong {
+    font-weight: 700;
+}
+.r-right-stars {
+    position: absolute;
+    bottom: 1em;
+}
+@media screen and (max-width: 1142px) {
+    .r-hebergements {
+        flex-direction: column-reverse;
+    }
+    .r-hebergement {
+        width: auto;
+        margin-bottom: 1em;
+    }
+    .r-left {
+        margin-right: 0;
+    }
+    .r-right-list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .r-right-card {
+        width: 100%;
+    }
+    .r-card-link-right {
+        width: auto;
+    }
+}
+@media screen and (max-width:885px) {
+    .r-hebergements {
+        padding: 0;
+    }
+    .r-hebergement {
+        padding: 1.2em 1.5em;
+        margin-bottom: 0;
+    }
+    .r-left {
+        margin-right: 0;
+        background-color: #fff;
+    }
+    .r-left-list, .r-right-list {
+        flex-direction: column;
+    }
+    .r-img-card-left {
+        height: 6.7em;
+    }
+    .r-button-more {
+       margin: 1em 0 1em; 
+    }
+    .r-right-card, .r-left-card {
+        width: auto;
+        margin-bottom: 1em;
+    }
+    .r-card-link-left {
+        width: auto;
+    }
+    .r-right {
+        border-radius: 0;
+    }
+}

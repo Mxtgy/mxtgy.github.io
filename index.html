@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="header-content.css">
+    <link rel="stylesheet" href="hebergement.css">
+    <link rel="stylesheet" href="activite.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="animations.css">
     <script src="https://kit.fontawesome.com/a185ac6f9e.js" defer crossorigin="anonymous"></script>
     <title>Réservia</title>
 </head>
@@ -43,10 +48,10 @@
             <div class="r-filtres">
                 <h2>Filtres</h2>
                 <div class="r-filtres-list">
-                    <button class="r-filtre-button"><i class="fas fa-money-bill-wave"></i>économique</button>
-                    <button class="r-filtre-button"><i class="fas fa-child"></i>familial</button>
-                    <button class="r-filtre-button"><i class="fas fa-heart"></i>romantique</button>
-                    <button class="r-filtre-button"><i class="fas fa-dog"></i>Animaux autorisés</button>
+                    <button class="r-filtre-button"><i class="fas fa-money-bill-wave"></i><span>économique</span></button>
+                    <button class="r-filtre-button"><i class="fas fa-child"></i><span>familial</span></button>
+                    <button class="r-filtre-button"><i class="fas fa-heart"></i><span>romantique</span></button>
+                    <button class="r-filtre-button"><i class="fas fa-dog"></i><span>Animaux autorisés</span></button>
                 </div>
             </div>
             <div class="r-information">
@@ -64,8 +69,14 @@
                         <article class="r-left-card">
                             <header>
                                 <figure class="r-img-card-left">
-                                    <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                    <picture>
+                                        <source srcset="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 5993w,
+                                                        images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 2997w,
+                                                        images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1499w,
+                                                        images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg 750w">
+                                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                                         class="r-card-left-image" alt="">
+                                    </picture>
                                 </figure>
                             </header>
                             <footer class="r-left-card-text">

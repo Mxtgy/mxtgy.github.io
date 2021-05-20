@@ -1,0 +1,8 @@
+/* Animation survol */
+
+.r-filtre-button, .r-left-card, .r-right-card, .r-activite-card, .r-activite-aside-card {
+    transition: transform .2s;
+}
+.r-filtre-button:hover, .r-left-card:hover, .r-right-card:hover, .r-activite-card:hover, .r-activite-aside-card:hover {
+    transform: scale(1.04);
+}
